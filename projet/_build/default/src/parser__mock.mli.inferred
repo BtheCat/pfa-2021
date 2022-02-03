@@ -1,0 +1,26 @@
+type token =
+    TIMES
+  | SUBST
+  | SOLVE
+  | SIMPL
+  | RPARA
+  | PLUS
+  | PLOT
+  | OP1 of Syntax.op1
+  | OP0 of Syntax.op0
+  | MINUS
+  | LPARA
+  | INTEG
+  | INT of int
+  | IDENT of string
+  | EVAL
+  | EOL
+  | DIV
+  | DERIVE
+  | COL
+val menhir_begin_marker : int
+val xv_expr : Syntax.expr
+val xv_e : Syntax.expr
+val xv_command : Syntax.cmd
+val xv_c : Syntax.cmd
+val menhir_end_marker : int

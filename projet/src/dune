@@ -1,0 +1,8 @@
+(executable
+ (name calc)
+ (flags :standard -w -27-26-32-33))
+
+(ocamllex (modules lexer))
+
+(menhir (modules parser))
+
